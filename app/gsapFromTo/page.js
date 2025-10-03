@@ -7,7 +7,6 @@ export default function Page() {
   // Register gsap context
   useGSAP(() => {
     gsap.fromTo("#box3", {
-
         borderRadius: "100%",
     }, {
       x: "+=200",
