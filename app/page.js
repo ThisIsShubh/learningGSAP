@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { FaGithub } from 'react-icons/fa';
 
 export default function Home() {
   const buttonsRef = useRef([]);
@@ -194,7 +195,16 @@ export default function Home() {
           <div className="relative mb-12">
             <div className="w-48 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto mb-4"></div>
             <div className="pulse-glow w-32 h-32 mx-auto border-2 border-purple-400/30 rounded-full flex items-center justify-center">
-              <div className="w-24 h-24 border-2 border-purple-400/50 rounded-full"></div>
+              <div className="w-24 h-24 flex items-center justify-center border-2 border-purple-400/50 rounded-full">
+              <a
+      href="https://github.com/thisisshubh/learningGSAP"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-24 h-24 flex items-center justify-center border-2 border-purple-400/50 rounded-full hover:border-purple-400 transition"
+    >
+              <FaGithub className="text-purple-400 text-4xl" />
+              </a>
+              </div>
             </div>
           </div>
 
