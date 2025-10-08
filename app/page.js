@@ -283,6 +283,24 @@ export default function Home() {
             </button>
           </Link>
 
+          {/* GSAP .from() Button */}
+          <Link href="/gsapStagger" className="block">
+            <button
+              ref={addToRefs}
+              className="action-button group relative bg-gradient-to-br from-purple-600 via-purple-500 to-pink-600 rounded-[99999px] py-3 px-6 text-white font-semibold text:md sm:text-xl shadow-2xl transform transition-all duration-300 border-2 border-purple-400/30 overflow-hidden"
+            >
+              <span className="relative z-10 flex items-center gap-3">
+                Stagger
+              </span>
+              
+              {/* Hover Effect Layer */}
+              <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-500 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-[99999px]"></div>
+              
+              {/* Shine Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+            </button>
+          </Link>
+
         </div>
           
 
